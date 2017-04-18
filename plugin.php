@@ -2,9 +2,9 @@
 
 /**
  * @wordpress-plugin
- * Plugin Name:       Agreable Partnership Plugin
+ * Plugin Name:       Agreable Sponsored Posts Plugin
  * Plugin URI:        http://shortlistmedia.co.uk
- * Description:       Created custom partnerships.
+ * Description:       Created custom Sponsored Posts.
  * Version:           2.0.0
  * Author:            Shortlist Media
  * Author URI:        http://shortlistmedia.co.uk

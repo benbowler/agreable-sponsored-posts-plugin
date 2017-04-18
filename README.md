@@ -1,4 +1,4 @@
-Shortlist Media Wordpress Partnership Plugin
+Shortlist Media Wordpress Sponsored Posts Plugin
 ===============
 
 Wordpress Plugin built for Croissant stack using [Herbert](http://getherbert.com/) plugin framework.
@@ -27,7 +27,7 @@ Parent theme will include the plugin Twig templates and render using Timber (see
 * `/app/hooks/slm_plugin_enqueue.php`
 Just before rendering the plugin template, the parent theme calls Wordpress `do_action('acf_{{name}}_enqueue')`. e.g. (using Timber):
 `{% do action('slm_'~widget.acf_fc_layout~'_enqueue', widget) %}`
-The hook name is constructed from the ACF Field Group 'name' in `widget-loader-acf.php`. e.g. 'acf_partnership_plugin_enqueue'
+The hook name is constructed from the ACF Field Group 'name' in `widget-loader-acf.php`. e.g. 'acf_sponsored_posts_plugin_enqueue'
 
 #### Configurable plugin options for Wordpress installation
 * `app/panels.php`
@@ -36,9 +36,9 @@ Adds Settings panel for installation specific configuration. Uses ACF definition
 ##### Using ACF to create panels in Post Type menu
 ```
 acf_add_options_sub_page(array(
-  'page_title'  => 'Partnership Style Settings',
-  'menu_title'  => 'Partnership Settings',
-  'parent_slug' => 'edit.php?post_type=partnership',
+  'page_title'  => 'Sponsored Posts Style Settings',
+  'menu_title'  => 'Sponsored Posts Settings',
+  'parent_slug' => 'edit.php?post_type=sponsored_posts',
 ));
 ```
 
@@ -51,12 +51,12 @@ array (
     array (
       'param' => 'options_page',
       'operator' => '==',
-      'value' => 'acf-options-partnership-settings',
+      'value' => 'acf-options-sponsored_posts-settings',
     ),
   ),
 ),
 ```
-Note: If `acf_add_options_sub_page` is given 'menu_title' of 'Partnership Settings', the location 'value' is 'acf-options-partnership-settings' (as above).
+Note: If `acf_add_options_sub_page` is given 'menu_title' of 'Sponsored Posts Settings', the location 'value' is 'acf-options-sponsored_posts-settings' (as above).
 
 #### Deploy to packagist
 

@@ -1,4 +1,4 @@
-<?php namespace AgreablePartnershipPlugin\Hooks;
+<?php namespace AgreableSponsoredPostsPlugin\Hooks;
 
 class RelatedContentAcf {
   public function init() {
@@ -10,7 +10,7 @@ class RelatedContentAcf {
       [
         'param' => 'post_type',
         'operator' => '==',
-        'value' => 'partnership',
+        'value' => 'sponsored_posts',
       ]
     ];
 

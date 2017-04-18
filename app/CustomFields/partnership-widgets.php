@@ -2,11 +2,11 @@
 
 add_action('agreable_app_theme_init', function() {
 
-  $key = 'partnership';
+  $key = 'sponsored_posts';
 
   include_once get_template_directory() . "/custom-fields/WidgetLoader.php";
 
-  $widgets = WidgetLoader::findByUsage('partnership');
+  $widgets = WidgetLoader::findByUsage('sponsored_posts');
 
   register_field_group(array (
     'key' => $key . '_widgets_group',
@@ -32,7 +32,7 @@ add_action('agreable_app_theme_init', function() {
         array (
           'param' => 'post_type',
           'operator' => '==',
-          'value' => 'partnership',
+          'value' => 'sponsored_posts',
         ),
       ),
     ),

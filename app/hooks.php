@@ -2,10 +2,10 @@
 
 /** @var  \Herbert\Framework\Application $container */
 
-use AgreablePartnershipPlugin\Hooks\BasicDetailsAcf;
-use AgreablePartnershipPlugin\Hooks\SocialMediaAcf;
-use AgreablePartnershipPlugin\Hooks\HtmlOverridesAcf;
-use AgreablePartnershipPlugin\Hooks\RelatedContentAcf;
+use AgreableSponsoredPostsPlugin\Hooks\BasicDetailsAcf;
+use AgreableSponsoredPostsPlugin\Hooks\SocialMediaAcf;
+use AgreableSponsoredPostsPlugin\Hooks\HtmlOverridesAcf;
+use AgreableSponsoredPostsPlugin\Hooks\RelatedContentAcf;
 
 
 (new BasicDetailsAcf)->init();

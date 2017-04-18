@@ -13,8 +13,8 @@ return [
      */
     'requires' => [
         __DIR__ . '/app/custom-post-types.php',
-        __DIR__ . '/app/CustomFields/partnership-widgets.php',
-        __DIR__ . '/app/CustomFields/partnership-nav.php',
+        __DIR__ . '/app/CustomFields/sponsored_posts-widgets.php',
+        __DIR__ . '/app/CustomFields/sponsored_posts-nav.php',
         __DIR__ . '/app/CustomFields/header.php',
         __DIR__ . '/app/CustomRoles/roles.php',
         __DIR__ . '/app/hooks.php',
@@ -59,21 +59,21 @@ return [
      * The routes to auto-load.
      */
     'routes' => [
-        // 'AgreablePartnershipPlugin' => __DIR__ . '/app/routes.php'
+        // 'AgreableSponsoredPostsPlugin' => __DIR__ . '/app/routes.php'
     ],
 
     /**
      * The panels to auto-load.
      */
     'panels' => [
-        // 'AgreablePartnershipPlugin' => __DIR__ . '/app/panels.php'
+        // 'AgreableSponsoredPostsPlugin' => __DIR__ . '/app/panels.php'
     ],
 
     /**
      * The APIs to auto-load.
      */
     'apis' => [
-        // 'AgreablePartnershipPlugin' => __DIR__ . '/app/api.php'
+        // 'AgreableSponsoredPostsPlugin' => __DIR__ . '/app/api.php'
     ],
 
     /**
@@ -84,7 +84,7 @@ return [
      * when rendering a view in twig.
      */
     'views' => [
-        // 'AgreablePartnershipPlugin' => __DIR__ . '/resources/views'
+        // 'AgreableSponsoredPostsPlugin' => __DIR__ . '/resources/views'
     ],
 
     /**
@@ -102,10 +102,10 @@ return [
     /**
      * Namespace used in ACF Panel definitions.
      */
-    'agreable_namespace' => 'agreable_partnership',
+    'agreable_namespace' => 'agreable_sponsored_posts',
 
     /**
      *
      */
-    'agreable_pluginTitle'      => 'Partnership'
+    'agreable_pluginTitle'      => 'Sponsored Posts'
 ];

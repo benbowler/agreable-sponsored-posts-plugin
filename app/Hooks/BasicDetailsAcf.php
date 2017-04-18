@@ -1,4 +1,4 @@
-<?php namespace AgreablePartnershipPlugin\Hooks;
+<?php namespace AgreableSponsoredPostsPlugin\Hooks;
 
 class BasicDetailsAcf {
 
@@ -11,7 +11,7 @@ class BasicDetailsAcf {
       [
         'param' => 'post_type',
         'operator' => '==',
-        'value' => 'partnership',
+        'value' => 'sponsored_posts',
       ]
     ];
 

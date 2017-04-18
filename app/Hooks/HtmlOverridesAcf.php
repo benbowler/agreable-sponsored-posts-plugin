@@ -1,4 +1,4 @@
-<?php namespace AgreablePartnershipPlugin\Hooks;
+<?php namespace AgreableSponsoredPostsPlugin\Hooks;
 
 class HtmlOverridesAcf {
 
@@ -11,7 +11,7 @@ class HtmlOverridesAcf {
       [
         'param' => 'post_type',
         'operator' => '==',
-        'value' => 'partnership',
+        'value' => 'sponsored_posts',
       ],
       [
         'param' => 'current_user_role',

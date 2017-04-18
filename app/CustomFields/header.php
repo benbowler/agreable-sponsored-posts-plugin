@@ -1,7 +1,7 @@
 <?php
 use AgreableLongformPlugin\CustomFields\HeaderDefinition;
 
-$post_type = 'partnership';
+$post_type = 'sponsored_posts';
 $key = $post_type . '_header';
 
 $header_acf = HeaderDefinition::get($post_type);
@@ -43,5 +43,5 @@ foreach($header_acf['fields'] as &$field) {
 $header_acf['fields'][] = $brand;
 $header_acf['fields'][] = $brand_image;
 
-$header_acf = apply_filters('agreable_partnership_plugin_header_acf', $header_acf);
+$header_acf = apply_filters('agreable_sponsored_posts_plugin_header_acf', $header_acf);
 register_field_group($header_acf);

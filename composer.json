@@ -1,5 +1,5 @@
 {
-  "name": "shortlist-digital/agreable-partnership-plugin",
+  "name": "shortlist-digital/agreable-sponsored_posts-plugin",
   "type": "wordpress-plugin",
   "description": "Wordpress plugin for Shortlist Media.",
   "license": "MIT",
@@ -24,7 +24,7 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "AgreablePartnershipPlugin\\": "app/"
+      "AgreableSponsoredPostsPlugin\\": "app/"
     }
   }
 }

@@ -1,4 +1,4 @@
-<?php namespace AgreablePartnershipPlugin;
+<?php namespace AgreableSponsoredPostsPlugin;
 
 class Helper {
 

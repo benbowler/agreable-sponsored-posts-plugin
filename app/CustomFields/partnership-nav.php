@@ -2,11 +2,11 @@
 
 add_action('agreable_app_theme_init', function() {
 
-  $key = 'partnership_nav';
+  $key = 'sponsored_posts_nav';
 
   register_field_group(array(
       'key' => $key,
-      'title' => 'Partnership Nav',
+      'title' => 'Sponsored Posts Nav',
       'fields' => array(
 					 array (
 						'key' => $key . '_basic_details_tab',
@@ -155,7 +155,7 @@ add_action('agreable_app_theme_init', function() {
               array(
                   'param' => 'post_type',
                   'operator' => '==',
-                  'value' => 'partnership'
+                  'value' => 'sponsored_posts'
               )
           )
       ),

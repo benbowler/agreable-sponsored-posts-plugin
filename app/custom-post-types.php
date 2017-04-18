@@ -4,23 +4,23 @@
 \add_action( 'init', function() {
 
   $labels = array(
-    'name'                => _x('Partnerships', 'Post Type General Name', 'text_domain'),
-    'singular_name'       => _x('Partnership', 'Post Type Singular Name', 'text_domain'),
-    'menu_name'           => __('Partnership', 'text_domain'),
+    'name'                => _x('Sponsored Postss', 'Post Type General Name', 'text_domain'),
+    'singular_name'       => _x('Sponsored Posts', 'Post Type Singular Name', 'text_domain'),
+    'menu_name'           => __('Sponsored Posts', 'text_domain'),
     'parent_item_colon'   => __('Parent Item:', 'text_domain'),
-    'all_items'           => __('All Partnerships', 'text_domain'),
-    'view_item'           => __('View Partnership', 'text_domain'),
-    'add_new_item'        => __('Add New Partnership', 'text_domain'),
+    'all_items'           => __('All Sponsored Postss', 'text_domain'),
+    'view_item'           => __('View Sponsored Posts', 'text_domain'),
+    'add_new_item'        => __('Add New Sponsored Posts', 'text_domain'),
     'add_new'             => __('Add New', 'text_domain'),
-    'edit_item'           => __('Edit Partnership', 'text_domain'),
-    'update_item'         => __('Update Partnership', 'text_domain'),
-    'search_items'        => __('Search Partnerships', 'text_domain'),
+    'edit_item'           => __('Edit Sponsored Posts', 'text_domain'),
+    'update_item'         => __('Update Sponsored Posts', 'text_domain'),
+    'search_items'        => __('Search Sponsored Postss', 'text_domain'),
     'not_found'           => __('Not found', 'text_domain'),
     'not_found_in_trash'  => __('Not found in Trash', 'text_domain'),
   );
 
   $args = array(
-    'label'               => __('partnership post', 'text_domain'),
+    'label'               => __('sponsored_posts post', 'text_domain'),
     'description'         => __('Sponsored content creator', 'text_domain'),
     'labels'              => $labels,
     'supports'            => array('title','thumbnail','revisions','author'),
@@ -37,23 +37,23 @@
     'has_archive'         => false,
     'exclude_from_search' => false,
     'publicly_queryable'  => true,
-    'capability_type' => 'partnership',
+    'capability_type' => 'sponsored_posts',
     'capabilities' => array(
-      'publish_posts' => 'publish_partnerships',
-      'edit_posts' => 'edit_partnerships',
-      'edit_others_posts' => 'edit_others_partnerships',
-      'delete_posts' => 'delete_partnerships',
-      'delete_private_posts' => 'delete_private_partnerships',
-      'delete_others_posts' => 'delete_others_partnerships',
-      'read_private_posts' => 'read_private_partnerships',
-      'edit_post' => 'edit_partnership',
-      'delete_post' => 'delete_partnership',
-      'read_post' => 'read_partnership',
+      'publish_posts' => 'publish_sponsored_posts',
+      'edit_posts' => 'edit_sponsored_posts',
+      'edit_others_posts' => 'edit_others_sponsored_posts',
+      'delete_posts' => 'delete_sponsored_posts',
+      'delete_private_posts' => 'delete_private_sponsored_posts',
+      'delete_others_posts' => 'delete_others_sponsored_posts',
+      'read_private_posts' => 'read_private_sponsored_posts',
+      'edit_post' => 'edit_sponsored_posts',
+      'delete_post' => 'delete_sponsored_posts',
+      'read_post' => 'read_sponsored_posts',
     ),
     'map_meta_cap' => true,
     'rewrite' => false
   );
 
-  \register_post_type('partnership', $args);
+  \register_post_type('sponsored_posts', $args);
 }
 ,0);
